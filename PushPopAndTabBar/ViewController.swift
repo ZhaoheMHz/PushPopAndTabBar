@@ -12,9 +12,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        // 设置自身颜色
+        self.view.backgroundColor = .gray
     }
 
-
+    @IBAction func pushAction(_ sender: Any) {
+        self.navigationController?.pushViewController(SecondViewController(), animated: true)
+    }
 }
 

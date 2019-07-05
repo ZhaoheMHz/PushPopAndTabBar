@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let tabBarVC = self.window?.rootViewController! as! UITabBarController
+        tabBarVC.tabBar.isTranslucent = false
+        
+        let redDotView: UIView = {
+            let view = UIView()
+            view.backgroundColor = .red
+            view.layer.cornerRadius = 10
+            return view
+        }()
+        
+        // 在tabbar上添加view，并使用自动布局
+        tabBarVC.tabBar.addSubview(redDotView)
+//        redDotView.frame = CGRect(x: 100, y: 30, width: 20, height: 20)
+        redDotView.snp.makeConstraints { make in
+            make.left.equalTo(100)
+            make.top.equalTo(30)
+            make.height.width.equalTo(20)
+        }
+        
         return true
     }
 

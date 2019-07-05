@@ -12,9 +12,14 @@
 		86FF706322CF492A008652D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86FF706122CF492A008652D3 /* Main.storyboard */; };
 		86FF706522CF492B008652D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86FF706422CF492B008652D3 /* Assets.xcassets */; };
 		86FF706822CF492B008652D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86FF706622CF492B008652D3 /* LaunchScreen.storyboard */; };
+		86FF707122CF49AE008652D3 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FF706F22CF49AE008652D3 /* SecondViewController.swift */; };
+		86FF707222CF49AE008652D3 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86FF707022CF49AE008652D3 /* SecondViewController.xib */; };
+		D9AB24070F410798BC3B0FF1 /* Pods_PushPopAndTabBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82808C9D548A18A6E7E3DEA0 /* Pods_PushPopAndTabBar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		82808C9D548A18A6E7E3DEA0 /* Pods_PushPopAndTabBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PushPopAndTabBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85E3C5B503B8A04B5FDA5BE0 /* Pods-PushPopAndTabBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushPopAndTabBar.release.xcconfig"; path = "Target Support Files/Pods-PushPopAndTabBar/Pods-PushPopAndTabBar.release.xcconfig"; sourceTree = "<group>"; };
 		86FF705A22CF492A008652D3 /* PushPopAndTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushPopAndTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86FF705D22CF492A008652D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86FF705F22CF492A008652D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,9 @@
 		86FF706422CF492B008652D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86FF706722CF492B008652D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86FF706922CF492B008652D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86FF706F22CF49AE008652D3 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		86FF707022CF49AE008652D3 /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		8BC9F833D22E1EEECB6CD9A9 /* Pods-PushPopAndTabBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushPopAndTabBar.debug.xcconfig"; path = "Target Support Files/Pods-PushPopAndTabBar/Pods-PushPopAndTabBar.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9AB24070F410798BC3B0FF1 /* Pods_PushPopAndTabBar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,8 @@
 			children = (
 				86FF705C22CF492A008652D3 /* PushPopAndTabBar */,
 				86FF705B22CF492A008652D3 /* Products */,
+				A866F39C78C25F754A50C5E1 /* Pods */,
+				B7CA4DA65619CED95706F685 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +67,32 @@
 			children = (
 				86FF705D22CF492A008652D3 /* AppDelegate.swift */,
 				86FF705F22CF492A008652D3 /* ViewController.swift */,
+				86FF706F22CF49AE008652D3 /* SecondViewController.swift */,
+				86FF707022CF49AE008652D3 /* SecondViewController.xib */,
 				86FF706122CF492A008652D3 /* Main.storyboard */,
 				86FF706422CF492B008652D3 /* Assets.xcassets */,
 				86FF706622CF492B008652D3 /* LaunchScreen.storyboard */,
 				86FF706922CF492B008652D3 /* Info.plist */,
 			);
 			path = PushPopAndTabBar;
+			sourceTree = "<group>";
+		};
+		A866F39C78C25F754A50C5E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8BC9F833D22E1EEECB6CD9A9 /* Pods-PushPopAndTabBar.debug.xcconfig */,
+				85E3C5B503B8A04B5FDA5BE0 /* Pods-PushPopAndTabBar.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B7CA4DA65619CED95706F685 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82808C9D548A18A6E7E3DEA0 /* Pods_PushPopAndTabBar.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 86FF706C22CF492B008652D3 /* Build configuration list for PBXNativeTarget "PushPopAndTabBar" */;
 			buildPhases = (
+				DB6FB871846293473A9419F8 /* [CP] Check Pods Manifest.lock */,
 				86FF705622CF492A008652D3 /* Sources */,
 				86FF705722CF492A008652D3 /* Frameworks */,
 				86FF705822CF492A008652D3 /* Resources */,
+				247BDB8803EE325BFC8D75A5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,6 +155,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86FF707222CF49AE008652D3 /* SecondViewController.xib in Resources */,
 				86FF706822CF492B008652D3 /* LaunchScreen.storyboard in Resources */,
 				86FF706522CF492B008652D3 /* Assets.xcassets in Resources */,
 				86FF706322CF492A008652D3 /* Main.storyboard in Resources */,
@@ -130,11 +164,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		247BDB8803EE325BFC8D75A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PushPopAndTabBar/Pods-PushPopAndTabBar-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PushPopAndTabBar/Pods-PushPopAndTabBar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB6FB871846293473A9419F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PushPopAndTabBar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		86FF705622CF492A008652D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86FF707122CF49AE008652D3 /* SecondViewController.swift in Sources */,
 				86FF706022CF492A008652D3 /* ViewController.swift in Sources */,
 				86FF705E22CF492A008652D3 /* AppDelegate.swift in Sources */,
 			);
@@ -280,6 +362,7 @@
 		};
 		86FF706D22CF492B008652D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BC9F833D22E1EEECB6CD9A9 /* Pods-PushPopAndTabBar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +380,7 @@
 		};
 		86FF706E22CF492B008652D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85E3C5B503B8A04B5FDA5BE0 /* Pods-PushPopAndTabBar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
